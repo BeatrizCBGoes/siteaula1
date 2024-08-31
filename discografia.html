@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demi Lovato - Discografia</title>
+    <style>
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #220031;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            /*centraliza o menu*/
+            gap: 20px;
+        }
+
+        .imagem_demi {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #220031;
+            color: white;
+            text-align: center;
+
+        }
+        .card {
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+
+        }
+
+        ul {
+            list-style-type: none;
+            color: #220031;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #220031 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #220031;
+            color: white;
+        }
+
+        .img {
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .img img {
+            width: 125px;
+            height: 115px;
+        }
+
+        @media all and (min-width: 35rem) {
+            body {
+                margin: 0 auto;
+            }
+
+            /*.container {
+                max-width: 1200px;
+                margin: 0 auto;
+
+            }*/
+
+            .img {
+                max-width: 28rem;
+                margin: 1rem;
+            }
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_demi {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+        img {
+            padding-top: 28px;
+            padding-left: 80px;
+            width: 68%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Demi Lovato</h1>
+        <br>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="discografia.html">Discografia</a></li>
+            <li><a href="televisao.html">Televisão</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_demi">
+            <img src="demi.jpg">
+            <div class="infos">
+                <p><strong>Ocupação</strong> Cantora e Atriz</p>
+                <p>
+                    <strong>Data do Nascimento</strong>
+                    20/08/1992
+                </p>
+                <p><strong>Local de Nascimento</strong> Novo México, Estados Unidos da América</p>
+                <br><br><br>
+            </div>
+
+        </aside>
+        <section class=" principal"> 
+            <h1>
+                Albuns
+            </h1> 
+            <div class="card">
+                <div class="img">
+                    <img src="dontforget.jpg">
+
+                    <div class="">
+                        <h2>Don't Forget</h2>
+                        <p>2008</p>
+
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="herewegoagain.jpg">
+
+                    <div class="">
+                        <h2>Here We Go Again</h2>
+                        <p>2009</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="Unbroken.jpg">
+
+                    <div class="">
+                        <h2>Unbroken</h2>
+                        <p>2011</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="DemiCD.jpg">
+
+                    <div class="">
+                        <h2>DEMI </h2>
+                        <p>2013</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="confident.png">
+
+                    <div class="">
+                        <h2>Confident</h2>
+                        <p>2015</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="tellmeyouloveme.jpg">
+
+                    <div class="">
+                        <h2>Tell Me You Love Me</h2>
+                        <p>2017</p>
+
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="dwtd.png">
+
+                    <div class="">
+                        <h2>Dancing With The Devil... The Art Of Starting Over</h2>
+                        <p>2021</p>
+
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="holyfvck.jpg">
+
+                    <div class="">
+                        <h2>Holy Fvck</h2>
+                        <p>2022</p>
+
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="REVAMPED.jpeg">
+
+                    <div class="">
+                        <h2>REVAMPED</h2>
+                        <p>2023</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="container">
+        <h1> Desenvolvido para práticas educacionais</h1>
+    </footer>
+    </footer>
+    </div>
+</body>
+
+</html>
